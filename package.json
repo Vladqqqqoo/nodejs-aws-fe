@@ -1,10 +1,11 @@
 {
   "name": "store",
   "version": "0.1.0",
-  "private": true,
+  "private": true, 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy:s3": "serverless client deploy --region eu-west-1 --no-config-change --no-policy-change --no-cors-change",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
