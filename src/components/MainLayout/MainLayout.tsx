@@ -7,11 +7,12 @@ import Header from "components/MainLayout/components/Header";
 import {STORE_NAME} from "../../constants/common";
 
 function Copyright() {
+  const copyRightName = `${STORE_NAME} && divahome22`;
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        {STORE_NAME}
+        {copyRightName}
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
