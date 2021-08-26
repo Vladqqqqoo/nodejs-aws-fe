@@ -9,6 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Cart from "components/MainLayout/components/Cart";
 import {Link} from 'react-router-dom';
+import {STORE_NAME} from "../../../constants/common";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -46,7 +47,7 @@ export default function Header() {
     <AppBar position="relative">
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          <Link className={classes.homeLink} to="/">My Store!</Link>
+          <Link className={classes.homeLink} to="/">{STORE_NAME}</Link>
         </Typography>
 
         {auth && (

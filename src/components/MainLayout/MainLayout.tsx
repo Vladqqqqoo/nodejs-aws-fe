@@ -4,13 +4,15 @@ import {makeStyles} from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import Container from "@material-ui/core/Container";
 import Header from "components/MainLayout/components/Header";
+import {STORE_NAME} from "../../constants/common";
 
 function Copyright() {
+  const copyRightName = `${STORE_NAME} && divahome22`;
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        My Store
+        {copyRightName}
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
